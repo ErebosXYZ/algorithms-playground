@@ -5,7 +5,11 @@
  */
 
 function accountBalance(movements) {
-    return;
+    let movementsSum = 0;
+    for (let i = 0; i < movements.length; i++) {
+        movementsSum = movementsSum + movements[i].value;
+    }
+    return movementsSum;
 }
 
 console.log(accountBalance([

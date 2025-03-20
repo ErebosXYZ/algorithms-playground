@@ -8,7 +8,13 @@
 */
 
 function sumDeposits(deposits) {
-    return;
+    let depositsSum = 0;
+    for (let i = 0; i < deposits.length; i++) {
+        if (deposits[i] >= 0) {
+            depositsSum += deposits[i];
+        }
+    }
+    return depositsSum;
 }
 
 console.log(sumDeposits([200, 300, -100, 500])); 
@@ -19,5 +25,7 @@ console.log(sumDeposits([-150, 200, 50, -50]));
 
 console.log(sumDeposits([150, 100, -200, -300])); 
 // 250, se espera 250 porque 150 y 100 son los únicos depósitos 
+
+console.log(sumDeposits([-100, -150, -300, -200]))
 
 
