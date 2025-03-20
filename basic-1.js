@@ -4,7 +4,9 @@
  */
 
 function isAdult(age) {
-    return;
+    if (age >= 18) {
+        return true;
+    } return false;
 }
 
 console.log(isAdult(17)); // false, se espera false porque 17 es menor de 18 años
